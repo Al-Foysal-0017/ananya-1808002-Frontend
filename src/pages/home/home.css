@@ -5,9 +5,10 @@
 .submitGo {
   margin-top: 2rem;
   width: 300px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 8px;
   border: 1px solid #ea9373;
   background: #ea9373;
   color: #fff;
+  cursor: pointer;
 }

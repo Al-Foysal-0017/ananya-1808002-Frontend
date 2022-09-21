@@ -8,7 +8,6 @@ import "./home.css";
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const { user } = useSelector((state) => state.user);
-  // const { transport } = useSelector((state) => state.transports);
   const { places } = useSelector((state) => state.places);
   const [source, setSource] = useState("");
   const [destination, setDestination] = useState("");
@@ -118,28 +117,9 @@ const Home = () => {
         <div id="services">
           <h2 className="h-secondary text_align">Our Services</h2>
           <div className="serve_container">
-            {/* <div className="box1" id="s_box1">
-              <h4 className="h_serv">
-                Source
-                <img
-                  src="https://img.icons8.com/dusk/64/000000/open-source.png"
-                  alt=""
-                />
-              </h4>
-              <div className="small_box"></div>
-              <h4 className="h_serv">
-                Destination
-                <img src="prj_images/Destination.png" alt="" />
-              </h4>
-              <div className="small_box"></div>
-              <a href="" className="serv_btn">
-                GO
-              </a>
-            </div> */}
             <form onSubmit={onSubmitHandle}>
               <div
                 style={{
-                  // border: "1px solid #000",
                   marginTop: "2rem",
                   display: "flex",
                   flexDirection: "column",
@@ -191,9 +171,32 @@ const Home = () => {
                   ))}
                 </select>
               </div>
-              <button className="submitGo" id="submitt" type="submit">
-                Go
-              </button>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                {" "}
+                <button className="submitGo" id="submitt" type="submit">
+                  {loading ? "Loading..." : "Go"}
+                </button>
+              </div>
+              <div
+                className="det"
+                style={{
+                  background: "gray",
+                  color: "#fff",
+                  padding: "10px",
+                  borderRadius: "8px",
+                  margin: "0 0 2rem 0",
+                  width: "600px",
+                }}
+              >
+                <details>
+                  <summary style={{ cursor: "pointer" }}>More Info</summary>
+                  <p>
+                    TO use our website ,at first select your place and then
+                    select your destination ,click on go.You will get desired
+                    information.
+                  </p>
+                </details>
+              </div>
             </form>
           </div>
           {(responseData || responseError) && (
@@ -235,35 +238,12 @@ const Home = () => {
                 <img
                   style={{
                     width: "100vw",
-                    height: "600px",
+                    height: "400px",
                     objectFit: "cover",
                   }}
                   src="prj_images/img2.jpg"
                   alt="pic"
                 />
-              </div>
-              <div
-                className="det"
-                style={{
-                  position: "absolute",
-                  background: "#EA9373",
-                  color: "#fff",
-                  padding: "10px",
-                  borderRadius: "8px",
-                  margin: "-100px auto 0 auto",
-                  left: 0,
-                  right: 0,
-                  maxWidth: "600px",
-                }}
-              >
-                <details>
-                  <summary>More Info</summary>
-                  <p>
-                    TO use our website ,at first select your place and then
-                    select your destination ,click on go.You will get desired
-                    information.
-                  </p>
-                </details>
               </div>
             </div>
           )}

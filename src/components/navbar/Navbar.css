@@ -1,0 +1,25 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navSwapBtn {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2rem;
+}
+
+.logoutBtn {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: tomato;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.adminNavbarContainer {
+  height: 64px;
+  background: #ea93738e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminNavLink {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+}

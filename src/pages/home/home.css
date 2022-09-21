@@ -1,0 +1,13 @@
+/* .service {
+  height: 100vh;
+} */
+
+.submitGo {
+  margin-top: 2rem;
+  width: 300px;
+  margin-bottom: 3rem;
+  padding: 8px;
+  border: 1px solid #ea9373;
+  background: #ea9373;
+  color: #fff;
+}

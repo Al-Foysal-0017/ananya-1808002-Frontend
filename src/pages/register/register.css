@@ -1,0 +1,66 @@
+.backBtn {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: #ea9373;
+}
+
+.formContainer {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AuthForm {
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 424px;
+  padding: 1.4rem 1rem;
+  box-shadow: 7px 13px 12px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px 13px 12px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 13px 12px -4px rgba(0, 0, 0, 0.75);
+}
+
+.authTitle {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ea9373;
+}
+
+.group {
+  width: 100%;
+  padding-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.authInput {
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 18px;
+  max-width: 450px;
+}
+
+.authInput:focus {
+  outline: 0;
+  border: 2px solid #ea9373;
+}
+
+.authInputSubmit {
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 18px;
+  max-width: 490px;
+  cursor: pointer;
+  background: #ea9373;
+  color: #fff;
+  border: 2px solid #ea9373;
+}
+
+.swipPage {
+  padding-left: 6px;
+  color: gray;
+  padding-top: 8px;
+  font-size: 14px;
+}
